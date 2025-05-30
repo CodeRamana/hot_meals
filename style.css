@@ -1,0 +1,147 @@
+/* 
+
+-------- TYPOGRAPHY -------- 
+HTML FONT-SIZE: 
+62.5% / 10px
+FONT-SIZE:
+1.6 rem -16PX / 2rem - 20PX / 4rem - 40PX /4.8rem - 48PX / 62PX - 6.2rem
+
+FONT-WEIGHT:
+300 / 400 / 800
+
+LINE-HEIGHT:
+1.2 / 1.6
+
+LETTER-SPACING:
+0 / -2PX
+
+FONT-FAMILY:
+POPPINS
+Qwigley
+ 
+-------- MARGIN & SPACING -------- 
+
+MARGIN:
+0.5rem - 5 / 1rem - 10 / 1.5rem 15 / 2 rem -20 /2.5 rem 25 /3rem 30 / 4rem 40 / 50 / 60 / 70 / 80 / 90 / 100 / 125 / 150 / 200 / 250 / 300 / 400 / 500px
+
+-------- COLORS -------- 
+
+Grey 100 : #F6F5EE
+Grey 200 : #CFCFCF
+Grey 500 : #ADADAD
+Grey 600 : #504F4F
+Grey 800 : #353535
+Grey 900 : #090D12
+
+White : #FFFFFF
+
+Primary: #FDC347 
+Yellow : #FFAC0D
+Warning: #F17228
+
+red : #f03e3e
+Danger : #FF7474
+
+*/
+
+*{  margin: 0; padding: 0; box-sizing: border-box; }
+
+html{ font-size: 62.5%;}
+
+:root{
+    --font-family-primary : 'poppins';
+    --font-family-secondary : 'qwigley';
+
+    --text-xs : 1.6rem;
+    --text-sm : 2rem;
+    --text-h3 : 4rem;
+    --text-h2 : 4.8rem;
+    --text-h1 : 6.2rem;
+
+    --font-weight-normal : 300;
+    --font-weight-bold : 400;
+    --font-weight-bolder : 600;
+
+    --line-height-normal : 1.2;
+    --line-height-bigger : 1.6;
+
+    --letter-spacing-tight : -1px;
+
+     --grey-100: #F6F5EE;
+    --grey-200: #CFCFCF;
+    --grey-500: #ADADAD;
+    --grey-600: #504F4F;
+    --grey-800: #353535;
+    --grey-900: #090D12;
+
+    --white: #FFFFFF;
+
+    --primary: #FDBE35;
+    --yellow: #FFAC0D;
+    --warning: #F17228;
+
+    --red: #f03e3e;
+    --danger: #FF7474;
+    
+}
+
+body{ font-family: var(--font-family-primary); font-size: var(--text-sm); line-height: var(--line-height-bigger); letter-spacing: 0; font-weight: var(--font-weight-normal); color: var(--grey-900);}
+
+h1,h2,h3{ font-weight: var(--font-weight-bolder); line-height: var(--line-height-normal); letter-spacing: var(--letter-spacing-tight); color: var(--grey-800);}
+
+a,p{text-decoration: none; color: var(--grey-800); font-size: var(--text-xs); font-weight: var(--font-weight-normal); line-height: var(--line-height-bigger);}
+
+ul{list-style-type: none;}
+
+span{ font-weight: var(--font-weight-bolder); color: var(--grey-900); font-size: var(--text-xs);}
+
+header{margin-bottom: 2rem;}
+
+/* .main-container{max-width: 1300px; width: 95%; margin: 0 auto;} */
+
+.btn{ display: inline-block; border: 1px solid black; padding: 0.5rem 1rem; border-radius: 10px;}
+
+/* Header section */
+nav{height: 100px; background-color: white;}
+
+.logo{ width: 221px;}
+
+.navbar{ list-style-type: none;display: flex; justify-content: space-between;align-items: center;  padding: 1.5rem;}
+
+.nav-right{ display: flex; gap: 15px;}
+
+.nav-right > input{ border: none;font-size: var(--text-xs); width: 200px; text-align: center; font-weight: var(--font-weight-bolder); color: var(--grey-900) !important;}
+
+.hero-section{max-width: 1300px; width: 95%; margin: 0 auto; background-color: var(--primary); display: flex; align-items: center; justify-content: space-around; gap: 15px;}
+
+.food-served{ max-width: 500px; width: 100%;}
+
+.hero-heading{font-family: var(--font-family-secondary); font-size:var(--text-h1); letter-spacing: 0; color: var(--white); font-weight: var(--font-weight-normal);}
+
+.hero-card{ max-width: 856px; width: 100%; background-color: var(--white); padding: 2.4rem 1.5rem; }
+
+.hero-tabs{ display: flex; gap: 15px;}
+
+.search-hero{display: flex;}
+
+.search-hero > input{width: 100%;}
+
+/* main section */
+main{ margin-bottom: 5rem;}
+.food-section{ max-width: 1300px; width: 90%;  margin: 0 auto; margin-bottom: 5rem; }
+.food-card-section{ display: flex; justify-content: center; gap: 10px;padding: 5rem;}
+.food-card{max-width: 350px; width: 100%;}
+
+.feature-section , .feature-section > div , .food-category-section{display: flex;gap: 10px; justify-content: center; align-items: center;}
+
+.deals-section{ display: flex; justify-content: center;}
+.tiffen{ max-width: 600px; width: 100%;}
+.food-grid{display: grid; grid-template-columns: repeat(5,1fr); row-gap: 30px;}
+
+.footer-section{display: flex; justify-content: center;}
+.footer-menu{ flex-grow:3;}
+.footer-newsletter{ flex-grow: 2;}
+
+.footer-menu{display: flex; gap: 5rem;}
+
+.footer-author-section{ display: flex; justify-content: space-between;}
