@@ -169,7 +169,7 @@ nav{max-height: 100px; background-color: white;}
 
 .food-item-card{ display: flex; flex-direction: column; gap: 10px;}
 
-.food-item-card p{width: 50%; font-weight: var(--font-weight-bolder); }
+.food-item-card p{width: 75%; font-weight: var(--font-weight-bolder); }
 
 .feature{display: flex;flex-direction: column; align-items: center; gap: 5rem;justify-content: center;}
 
@@ -263,3 +263,62 @@ footer{background-color: var(--grey-900); padding: 6rem;}
 .footer-author-section > p , .footer-author-section > p > span  {color: var(--white); display: flex; gap: 0.5rem; }
 
 .footer-author-section > p > span {color: var(--yellow); font-style: italic;}
+
+/* 1334px = 83.4 * 16px */
+@media(max-width:83.4rem){
+   .search-hero > input{max-width:450px}
+}
+
+/* 81.25 * 16px = 1300 px */ 
+@media(max-width:81.25rem){
+    /* font-size : 9px (56.25 * 16 / 100) */
+    html{font-size:56.25%;}
+    .search-hero > input{max-width:430px}
+}
+/* 73.25 * 16px = 1172px */
+@media(max-width:73.25rem){
+    /* font-size : 8px (50 * 16 / 100) */
+    html{font-size:50%;}
+    .search-hero > input{max-width:380px}
+}
+
+/* 64.82 * 16px = 1037px */
+@media(max-width:64.82rem){
+    /* font-size : 7px (50 * 16 / 100) */
+    html{font-size:43.75%;}
+    .search-hero > input{max-width:350px}
+}
+
+/* 56.75 * 16px = 908px */
+@media(max-width:56.75rem){
+    /* font-size : 6px (50 * 16 / 100) */
+    html{font-size:37.5%;}
+    .search-hero > input{max-width:300px}
+    .feature-section{padding: 5rem;}
+    .tab > a{font-size: 25px !important;}
+    .logo{width: 150px;}
+    .hero-heading{font-size: 7.5rem;}
+}
+
+/* 48.67 * 16px = 778px */
+@media(max-width:48.67rem){
+    .food-grid{grid-template-columns: repeat(3,1fr);}
+    .deals-section { flex-wrap: wrap; gap:5rem;}
+    .feature-card > img{max-width: 100px;}
+    .navbar-address {display: none;}
+    .tab > span{display: none;}
+}
+
+/* 48.67 * 16px = 778px */
+@media(max-width:36rem){
+    html{font-size:35%;}
+    .food-grid{grid-template-columns: repeat(2,1fr);}
+    .deals-section { flex-wrap: wrap; gap:5rem;}
+    .hero-section{flex-wrap: wrap;}
+    .feature-card > img{max-width: 100px;}
+    .food-served{max-width:350px}
+    .hero-right{justify-content: center; align-items: center;}
+    .navbar-address {display: none;}
+    .tab > span{display: none;}
+}
+
