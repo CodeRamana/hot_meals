@@ -65,8 +65,8 @@
                         <div class="search-hero">
                             <input type="text" placeholder="Enter Your Address">
                             <a href="#" class="btn"><span class="material-symbols-outlined search-icon">
-                                search
-                            </span>Find Food</a>
+                                    search
+                                </span>Find Food</a>
                         </div>
                     </div>
                 </div>
@@ -89,41 +89,37 @@
                 <div class="food-item-card">
                     <img class="food-card" src="images/idly.png" alt="Idly">
                     <p>Idly</p>
-                    <p>30 min Delivery</p>
+                    <p class="tab active">30 min Delivery</p>
                 </div>
                 <div class="food-item-card">
                     <img class="food-card" src="images/parotta.png" alt="Parotta">
                     <p>Parotta</p>
-                    <p>30 min Delivery</p>
+                    <p class="tab active">30 min Delivery</p>
                 </div>
                 <div class="food-item-card">
                     <img class="food-card" src="images/Kichadi.png" alt="Kichadi">
                     <p>Kichadi</p>
-                    <p>30 min Delivery</p>
+                    <p class="tab active">30 min Delivery</p>
                 </div>
             </div>
-            <div>
+            <div class="feature">
                 <h1>How does it work</h1>
                 <div class="feature-section">
-                    <div>
-                        <div>
-                            <img src="images/timer.png" alt="Delivery Timer">
-                        </div>
+                    <div class="feature-card">
+                        <img src="images/timer.png" alt="Delivery Timer">
                         <p>Daily Discounts</p>
                     </div>
-                    <img src="images/HR.png">
                     <div>
-                        <div>
-                            <img src="images/location.png" alt="Location Icon">
-                        </div>
+                        <img src="images/HR.png">
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/location.png" alt="Location Icon">
                         <p>Live
                             Tracing</p>
                     </div>
                     <img src="images/HR.png">
-                    <div>
-                        <div>
-                            <img src="images/timer.png" alt="Delivery Timer">
-                        </div>
+                    <div class="feature-card">
+                        <img src="images/timer.png" alt="Delivery Timer">
                         <p>Quick
                             Delivery</p>
                     </div>
@@ -132,56 +128,62 @@
 
         </section>
 
-        <section>
-            <h3>Search by Food</h3>
+        <section class="search-food">
+            <div class="food-search-section">
+                <h3>Search by Food</h3>
 
-            <div class="food-category-section">
-                <div>
-                    <img src="images/Food Photo.png" alt="Dosa">
-                    <p>Dosa</p>
-                </div>
-                <div>
-                    <img src="images/Food Photo-1.png" alt="Aapppm">
-                    <p>Aapppm</p>
-                </div>
-                <div>
-                    <img src="images/Food Photo-2.png" alt="Puttu">
-                    <p>Puttu</p>
-                </div>
-                <div>
-                    <img src="images/Food Photo-3.png" alt="Idiyappam">
-                    <p>Idiyappam</p>
-                </div>
-                <div>
-                    <img src="images/Food Photo-4.png" alt="Pongal">
-                    <p>Pongal</p>
-                </div>
-                <div>
-                    <img src="images/Food Photo-5.png" alt="Veg Rice">
-                    <p>Veg Rice</p>
+                <div class="food-category-section">
+                    <div class="food-category">
+                        <img src="images/Food Photo.png" alt="Dosa">
+                        <p>Dosa</p>
+                    </div>
+                    <div class="food-category">
+                        <img src="images/Food Photo-1.png" alt="Aapppm">
+                        <p>Aapppm</p>
+                    </div>
+                    <div class="food-category">
+                        <img src="images/Food Photo-2.png" alt="Puttu">
+                        <p>Puttu</p>
+                    </div>
+                    <div class="food-category">
+                        <img src="images/Food Photo-3.png" alt="Idiyappam">
+                        <p>Idiyappam</p>
+                    </div>
+                    <div class="food-category">
+                        <img src="images/Food Photo-4.png" alt="Pongal">
+                        <p>Pongal</p>
+                    </div>
+                    <div class="food-category">
+                        <img src="images/Food Photo-5.png" alt="Veg Rice">
+                        <p>Veg Rice</p>
+                    </div>
                 </div>
             </div>
+
         </section>
 
-        <section>
+        <section class="deals-popular-section">
             <div class="deals-section">
-                <div>
+                <div class="deals-left">
                     <h3>Best deals <span>Crispy Diffen</span></h3>
                     <p>Enjoy the large size of Dosa. Complete
                         perfect slice of Dosa.</p>
-                    <a href="#" class="btn">Proceed to order</a>
+                    <a href="#" class="btn">Proceed to order <span
+                            class="material-symbols-outlined icon-filled arrow-icon">
+                            arrow_forward_ios
+                        </span></a>
                 </div>
-                <div>
+                <div class="deals-right">
                     <img class="tiffen" src="images/tiffen.png" alt="tiffen">
                 </div>
             </div>
-            <div>
+            <div class="popular-section">
                 <h1>Popular items</h1>
                 <div class="food-grid">
                     <div>
                         <img src="images/Rectangle 336.png" alt="Murukku">
                         <p>Murukku</p>
-                        <a href="#">Order Now</a>
+                        <a href="#" class="btn">Order Now</a>
                     </div>
                     <div>
                         <img src="images/Rectangle 336-1.png" alt="Paniyaram">
@@ -236,59 +238,65 @@
     </main>
 
     <footer>
-        <hr />
-        <section class="footer-section">
-            <div class="footer-menu">
-                <div>
-                    <p>Company</p>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
+        <section class="footer-main">
+            <hr />
+            <div class="footer-section">
+                <div class="footer-menu">
+                    <div>
+                        <p>Company</p>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Contact</p>
+                        <ul>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Partner with us </a></li>
+                            <li><a href="#">Ride with us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Legal</p>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Refund & Cancellation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <p>Contact</p>
-                    <ul>
-                        <li><a href="#">Help & Support</a></li>
-                        <li><a href="#">Partner with us </a></li>
-                        <li><a href="#">Ride with us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Legal</p>
-                    <ul>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Refund & Cancellation</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                    </ul>
+
+
+                <div class="footer-newsletter">
+                    <p>Follow Us</p>
+                    <div class="media-icons">
+                        <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                    </div>
+                    <p>Receive exclusive offers in your mailbox</p>
+                    <div class="newsletter-section">
+                        <p><span class="material-symbols-outlined icon-filled mail-icon">
+                                mail
+                            </span>Enter your email</p>
+                        <input type="email">
+                        <a href="#" class="btn">Subscribe</a>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="footer-newsletter">
-                <p>Follow Us</p>
-                <div>
-                    <a href="#"><img src="images/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="images/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="images/twitter.png" alt="twitter"></a>
-                </div>
-                <p>Receive exclusive offers in your mailbox</p>
-                <div>
-                    <input type="email" placeholder="Enter Your email">
-                    <a href="#">Subscribe</a>
-                </div>
+            <hr />
+            <div class="footer-author-section">
+                <p>All rights Reserved
+                    &copy;</p>
+                <p>Made with <span class="material-symbols-outlined icon-filled heart-icon">
+                        favorite
+                    </span> by <span class="author">Ramana.S</span></p>
             </div>
         </section>
-        <hr />
-        <div class="footer-author-section">
-            <p>All rights Reserved
-                copyright</p>
-            <p>Made with  by <span>Ramana.S</span></p>
-        </div>
-
     </footer>
 
 </body>

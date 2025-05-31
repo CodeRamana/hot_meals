@@ -95,13 +95,13 @@ ul{list-style-type: none;}
 
 span{ font-weight: var(--font-weight-bolder); color: var(--grey-900); font-size: var(--text-xs);}
 
-header{margin-bottom: 2rem;}
+header{margin-bottom: 3rem;}
 
 .icon-outlined {font-variation-settings: 'FILL' 0, 'wght' 400, 'opsz' 24;}
 
 .icon-filled {font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;}
 
-nav , .hero-section{max-width: 1300px; width: 95%; margin: 0 auto;}
+nav , .hero-section , .food-search-section , .deals-section,.popular-section{max-width: 1300px; width: 95%; margin: 0 auto;}
 
 .btn{ display: flex; border: 1px solid black; padding: 0.8rem 1.5rem; border-radius: 10px; align-items: center; justify-content: center; gap: 2px;}
 
@@ -159,24 +159,107 @@ nav{max-height: 100px; background-color: white;}
 
 .search-hero .btn > .search-icon {color:var(--white)}
 /* main section */
-main{ margin-bottom: 5rem;}
-.food-section{ max-width: 1300px; width: 90%;  margin: 0 auto; margin-bottom: 5rem; }
-.food-card-section{ display: flex; justify-content: center; gap: 10px;padding: 5rem;}
+ main{ margin-bottom: 8rem;}
+
+.food-section{ max-width: 1300px; width: 90%;  margin: 0 auto; margin-bottom: 8rem; }
+
+.food-card-section{ display: flex; justify-content: center; gap: 10px;padding: 5rem; margin-bottom: 8rem;}
+
 .food-card{max-width: 350px; width: 100%;}
 
 .food-item-card{ display: flex; flex-direction: column; gap: 10px;}
 
-.food-item-card p{width: 50%;}
-.feature-section , .feature-section > div , .food-category-section{display: flex;gap: 10px; justify-content: center; align-items: center;}
+.food-item-card p{width: 50%; font-weight: var(--font-weight-bolder); }
 
-.deals-section{ display: flex; justify-content: center;}
-.tiffen{ max-width: 600px; width: 100%;}
-.food-grid{display: grid; grid-template-columns: repeat(5,1fr); row-gap: 30px;}
+.feature{display: flex;flex-direction: column; align-items: center; gap: 5rem;justify-content: center;}
 
-.footer-section{display: flex; justify-content: center;}
+.feature > h1{background:linear-gradient(45deg, #FB3C00, #FFB800);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text; color: transparent; font-size: var(--text-h1); font-weight: var(--font-weight-bolder);}
+
+.feature-section{display: grid; grid-template-columns: 2fr 1fr 2fr 1fr 2fr; justify-items: center; align-items: center; box-shadow: 0 0 20px 0 #f0925c; padding: 3rem; max-width: 1300px; width: 90%; margin: 0 auto;border-radius: 5px;margin-bottom: 2.5rem;}
+
+.feature-card{ display: flex;align-items: center;justify-content: center; gap: 2rem;}
+
+.feature-card > img { flex-grow: 2; max-width: 136px; width: 100%;}
+
+.feature-card > p { width: 35%;background:linear-gradient(45deg, #FB3C00, #FFB800);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text; color: transparent; font-size: var(--text-sm); font-weight: var(--font-weight-bolder);}
+
+.search-food { background-color: var(--grey-100);}
+
+.food-search-section { padding: 5rem 0;}
+.food-search-section > h3 { font-size: var(--text-h3); padding: 2.5rem 5rem}
+
+.food-category-section{ display: flex;justify-content: center; gap: 1.5rem; padding: 5rem; margin-bottom: 5rem;}
+
+.food-category{display: flex;justify-content: center; flex-direction: column; align-items: center; gap: 1.5rem;}
+
+.food-category > img {max-width: 218px; width: 100%;}
+
+.food-category > p{ font-size: var(--text-sm); font-weight: var(--font-weight-bolder);}
+
+.deals-popular-section{ padding: 5rem;}
+
+.deals-section{ display: flex;justify-content: center; gap: 2.5rem; align-items: center; padding: 5rem;margin-bottom: 5rem;}
+
+.deals-left{display: flex; flex-direction: column; gap: 1.5rem; justify-content: center;}
+
+.deals-left > h3{font-size: var(--text-h3);}
+
+.deals-left > p{color: #616161;}
+
+.deals-left > a{background-color: var(--yellow); color: var(--white); border: none; font-size: var(--text-sm);}
+.deals-left > a > span{font-size: var(--text-xs);color: var(--white);}
+
+.deals-left span{font-size: var(--text-h3); color: var(--primary);}
+.deals-right{display: flex; flex-direction: column; }
+
+.tiffen{ max-width: 921px; width: 100%;}
+
+.popular-section{ display: flex;flex-direction: column; gap: 4rem;}
+
+.popular-section > p , .popular-section > h1{text-align: center;}
+
+.food-grid{display: grid; grid-template-columns: repeat(5,1fr); row-gap: 8rem; column-gap: 1rem;}
+
+.food-grid  img{ max-width: 250px;width: 100%;}
+
+.food-grid > div {display: flex; flex-direction: column; justify-content: center; gap: 1rem;}
+
+.food-grid > div > p {text-align: center; font-size: var(--text-sm); font-weight: var(--font-weight-bolder);}
+
+.food-grid > div > .btn {border: none; background-color: var(--yellow); color: var(--white); font-weight: var(--font-weight-bolder);}
+
+footer{background-color: var(--grey-900); padding: 6rem;}
+
+.footer-main{    margin: 0 2rem;
+    padding: 0 5rem;}
+
+.footer-section{display: flex; justify-content: center; padding: 5rem 0;}
+
 .footer-menu{ flex-grow:3;}
-.footer-newsletter{ flex-grow: 2;}
 
+.footer-newsletter{ flex-grow: 2;display: flex; flex-direction: column; gap: 2rem;}
+
+.footer-newsletter > p{ color: var(--white);}
 .footer-menu{display: flex; gap: 5rem;}
 
+.footer-menu > div > p {color: var(--white); font-weight: var(--font-weight-bolder); font-size: var(--text-sm);}
+
+.footer-menu > div > ul > li > a {color: var(--white);}
+
+.media-icons{display: flex; gap:2rem}
+
+.newsletter-section{display: flex; gap: 1rem; position: relative;}
+
+.newsletter-section > p , .newsletter-section > p > span { display: flex; align-items: center; gap: 0.5rem; color:var(--white); font-size: var(--text-xs); font-weight: var(--font-weight-bold);}
+
+.newsletter-section > p {position:absolute; top: 5px; left: 5px;}
+
+.newsletter-section > input {border: none; outline: none; background-color: #424242; padding: 1rem; border-radius: 5px;}
+
+.newsletter-section > a {background-color: var(--yellow); color: var(--white);}
+
 .footer-author-section{ display: flex; justify-content: space-between;}
+
+.footer-author-section > p , .footer-author-section > p > span  {color: var(--white); display: flex; gap: 0.5rem; }
+
+.footer-author-section > p > span {color: var(--yellow); font-style: italic;}
